@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css"
+    />
+    <style>
+      .task {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="">
+      <form action="">
+        <input
+          class="form-control form-control-lg"
+          type="text"
+          placeholder="Name"
+          aria-label=".form-control-lg example"
+        />
+        <input
+          class="form-control form-control-lg"
+          type="number"
+          placeholder="Roll No"
+          aria-label=".form-control-lg example"
+        />
+        <table id="table_id" class="display table-responsive">
+          <thead>
+            <tr>
+              <th class="border text-center">Subjects</th>
+              <th class="border text-center">Maths</th>
+              <th class="border text-center">English</th>
+              <th class="border text-center">Science</th>
+              <th class="border text-center">SS</th>
+              <th class="border text-center">Sanskrit</th>
+              <th class="border text-center">Gujarati</th>
+              <!-- <th class="border text-center">PT</th> -->
+              <th class="border text-center">Final Total(560)</th>
+              <th class="border text-center">Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border">
+              <td>Students</td>
+              <td>
+                <table>
+                  <tr>
+                    <td class="text-center">Section A(50) 40%</td>
+                    <td class="text-center">Section B(50) 40%</td>
+                    <td class="text-center">Section C(80) 37.5%</td>
+                    <td class="text-center">Section D(25) 40%</td>
+                    <td class="text-center">Total</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <td class="text-center">Section A(50) 40%</td>
+                    <td class="text-center">Section B(50) 40%</td>
+                    <td class="text-center">Section C(80) 37.5%</td>
+                    <td class="text-center">Section D(25) 40%</td>
+                    <td class="text-center">Total</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <td class="text-center">Section A(50) 40%</td>
+                    <td class="text-center">Section B(50) 40%</td>
+                    <td class="text-center">Section C(80) 37.5%</td>
+                    <td class="text-center">Section D(25) 40%</td>
+                    <td class="text-center">Total</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <td class="text-center">Section A(50) 40%</td>
+                    <td class="text-center">Section B(50) 40%</td>
+                    <td class="text-center">Section C(80) 37.5%</td>
+                    <td class="text-center">Section D(25) 40%</td>
+                    <td class="text-center">Total</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <td class="text-center">Section A(50) 40%</td>
+                    <td class="text-center">Section B(50) 40%</td>
+                    <td class="text-center">Section C(80) 37.5%</td>
+                    <td class="text-center">Section D(25) 40%</td>
+                    <td class="text-center">Total</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <td class="text-center">Section A(50) 40%</td>
+                    <td class="text-center">Section B(50) 40%</td>
+                    <td class="text-center">Section C(80) 37.5%</td>
+                    <td class="text-center">Section D(25) 40%</td>
+                    <td class="text-center">Total</td>
+                  </tr>
+                </table>
+              </td>
+              <!-- <td>
+                <table>
+                  <tr>
+                    <td class="text-center">Section A(50) 40%</td>
+                    <td class="text-center">Section B(50) 40%</td>
+                    <td class="text-center">Section C(80) 37.5%</td>
+                    <td class="text-center">Section D(25) 40%</td>
+                    <td class="text-center">Total</td>
+                  </tr>
+                </table>
+              </td> -->
+              <td class="text-center">-</td>
+              <td class="text-center">-</td>
+            </tr>
+            <tr>
+              <td>Student 1</td>
+              <td>
+                <table>
+                  <tr class="text-center">
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="a-maths"
+                        name="a-maths"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="b-maths"
+                        name="b-maths"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="c-maths"
+                        name="c-maths"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="d-1-maths"
+                        name="d-1"
+                      />
+                    </td>
+                    <td class="text-center">
+                      <label id="total-maths">0</label>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td><label id="label-a-maths">0</label></td>
+                    <td><label id="label-b-maths">0</label></td>
+                    <td><label id="label-c-maths">0</label></td>
+                    <td><label id="label-d-maths">0</label></td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr class="text-center">
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="a-english"
+                        name="a-english"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="b-english"
+                        name="b-english"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="c-english"
+                        name="c-english"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="d-1-english"
+                        name="d-1-english"
+                      />
+                    </td>
+                    <td><label id="total-english">0</label></td>
+                  </tr>
+                  <tr class="text-center">
+                    <td><label id="label-a-english">0</label></td>
+                    <td><label id="label-b-english">0</label></td>
+                    <td><label id="label-c-english">0</label></td>
+                    <td><label id="label-d-english">0</label></td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr class="text-center">
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="a-science"
+                        name="a-science"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="b-science"
+                        name="b-science"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="c-science"
+                        name="c-science"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="d-1-science"
+                        name="d-1-science"
+                      />
+                    </td>
+                    <td><label id="total-science">0</label></td>
+                  </tr>
+                  <tr class="text-center">
+                    <td><label id="label-a-science">0</label></td>
+                    <td><label id="label-b-science">0</label></td>
+                    <td><label id="label-c-science">0</label></td>
+                    <td><label id="label-d-science">0</label></td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr class="text-center">
+                    <td>
+                      <input type="number" class="task" id="a-ss" name="a-ss" />
+                    </td>
+                    <td>
+                      <input type="number" class="task" id="b-ss" name="b-ss" />
+                    </td>
+                    <td>
+                      <input type="number" class="task" id="c-ss" name="c-ss" />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="d-1-ss"
+                        name="d-1-ss"
+                      />
+                    </td>
+                    <td><label id="total-ss">0</label></td>
+                  </tr>
+                  <tr class="text-center">
+                    <td><label id="label-a-ss">0</label></td>
+                    <td><label id="label-b-ss">0</label></td>
+                    <td><label id="label-c-ss">0</label></td>
+                    <td><label id="label-d-ss">0</label></td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr class="text-center">
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="a-sanskrit"
+                        name="a-sanskrit"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="b-sanskrit"
+                        name="b-sanskrit"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="c-sanskrit"
+                        name="c-sanskrit"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="d-1-sanskrit"
+                        name="d-1-sanskrit"
+                      />
+                    </td>
+                    <td><label id="total-sanskrit">0</label></td>
+                  </tr>
+                  <tr class="text-center">
+                    <td><label id="label-a-sanskrit">0</label></td>
+                    <td><label id="label-b-sanskrit">0</label></td>
+                    <td><label id="label-c-sanskrit">0</label></td>
+                    <td><label id="label-d-sanskrit">0</label></td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr class="text-center">
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="a-gujarati"
+                        name="a-gujarati"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="b-gujarati"
+                        name="b-gujarati"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="c-gujarati"
+                        name="c-gujarati"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="d-1-gujarati"
+                        name="d-1-gujarati"
+                      />
+                    </td>
+                    <td><label id="total-gujarati">0</label></td>
+                  </tr>
+                  <tr class="text-center">
+                    <td><label id="label-a-gujarati">0</label></td>
+                    <td><label id="label-b-gujarati">0</label></td>
+                    <td><label id="label-c-gujarati">0</label></td>
+                    <td><label id="label-d-gujarati">0</label></td>
+                  </tr>
+                </table>
+              </td>
+              <!-- <td>
+                <table>
+                  <tr class="text-center">
+                    <td>
+                      <input type="number" class="task" id="a-pt" name="a-pt" />
+                    </td>
+                    <td>
+                      <input type="number" class="task" id="b-pt" name="b-pt" />
+                    </td>
+                    <td>
+                      <input type="number" class="task" id="c-pt" name="c-pt" />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        class="task"
+                        id="d-1-pt"
+                        name="d-1-pt"
+                      />
+                    </td>
+                    <td><label id="total-pt">0</label></td>
+                  </tr>
+                  <tr class="text-center">
+                    <td><label id="label-a-pt">0</label></td>
+                    <td><label id="label-b-pt">0</label></td>
+                    <td><label id="label-c-pt">0</label></td>
+                    <td><label id="label-d-pt">0</label></td>
+                  </tr>
+                </table>
+              </td> -->
+              <td style="text-align: center">
+                <label id="final">0</label>
+              </td>
+              <td style="text-align: center">
+                <label id="percentage">0</label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      <input
+        type="button"
+        name="print"
+        value="Print"
+        onClick=""
+        class="print container btn btn-primary"
+        type="submit"
+      />
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.print/1.6.0/jQuery.print.min.js"
+      integrity="sha512-i8ERcP8p05PTFQr/s0AZJEtUwLBl18SKlTOZTH0yK5jVU0qL8AIQYbbG5LU+68bdmEqJ6ltBRtCxnmybTbIYpw=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#table_id").DataTable();
+      });
+      $(".print").on("click", function () {
+        $.print("#table_id");
+      });
+    </script>
+
+    <script>
+      $(".task").bind("keyup mouseup", function () {
+        //   -------------------------- Declarations --------------------------------
+        var a_maths = document.getElementById("a-maths").value;
+        var a_english = document.getElementById("a-english").value;
+        var a_science = document.getElementById("a-science").value;
+        var a_ss = document.getElementById("a-ss").value;
+        var a_sanskrit = document.getElementById("a-sanskrit").value;
+        var a_gujarati = document.getElementById("a-gujarati").value;
+        var a_pt = document.getElementById("a-pt").value;
+
+        var b_maths = document.getElementById("b-maths").value;
+        var b_english = document.getElementById("b-english").value;
+        var b_science = document.getElementById("b-science").value;
+        var b_ss = document.getElementById("b-ss").value;
+        var b_sanskrit = document.getElementById("b-sanskrit").value;
+        var b_gujarati = document.getElementById("b-gujarati").value;
+        var b_pt = document.getElementById("b-pt").value;
+
+        var c_maths = document.getElementById("c-maths").value;
+        var c_english = document.getElementById("c-english").value;
+        var c_science = document.getElementById("c-science").value;
+        var c_ss = document.getElementById("c-ss").value;
+        var c_sanskrit = document.getElementById("c-sanskrit").value;
+        var c_gujarati = document.getElementById("c-gujarati").value;
+        var c_pt = document.getElementById("c-pt").value;
+
+        var d1_maths = document.getElementById("d-1-maths").value;
+        var d1_english = document.getElementById("d-1-english").value;
+        var d1_science = document.getElementById("d-1-science").value;
+        var d1_ss = document.getElementById("d-1-ss").value;
+        var d1_sanskrit = document.getElementById("d-1-sanskrit").value;
+        var d1_gujarati = document.getElementById("d-1-gujarati").value;
+        var d1_pt = document.getElementById("d-1-pt").value;
+
+        // var d2_maths = document.getElementById("d-2-maths").value;
+        // var d2_english = document.getElementById("d-2-english").value;
+        // var d2_science = document.getElementById("d-2-science").value;
+        // var d2_ss = document.getElementById("d-2-ss").value;
+        // var d2_sanskrit = document.getElementById("d-2-sanskrit").value;
+        // var d2_gujarati = document.getElementById("d-2-gujarati").value;
+        // var d2_pt = document.getElementById("d-2-pt").value;
+
+        // var d_maths = [d1_maths, d2_maths];
+        // var d_english = [d1_english, d2_english];
+        // var d_science = [d1_science, d2_science];
+        // var d_ss = [d1_ss, d2_ss];
+        // var d_sanskrit = [d1_sanskrit, d2_sanskrit];
+        // var d_gujarati = [d1_gujarati, d2_gujarati];
+        // var d_pt = [d1_pt, d2_pt];
+
+        //   -------------------------- Section A calculations --------------------------------
+
+        document.getElementById("label-a-maths").innerHTML =
+          (a_maths * 40) / 100;
+        document.getElementById("label-a-english").innerHTML =
+          (a_english * 40) / 100;
+        document.getElementById("label-a-science").innerHTML =
+          (a_science * 40) / 100;
+        document.getElementById("label-a-ss").innerHTML = (a_ss * 40) / 100;
+        document.getElementById("label-a-sanskrit").innerHTML =
+          (a_sanskrit * 40) / 100;
+        document.getElementById("label-a-gujarati").innerHTML =
+          (a_gujarati * 40) / 100;
+        document.getElementById("label-a-pt").innerHTML = (a_pt * 40) / 100;
+
+        //   -------------------------- Section B calculations --------------------------------
+
+        document.getElementById("label-b-maths").innerHTML =
+          (b_maths * 40) / 100;
+        document.getElementById("label-b-english").innerHTML =
+          (b_english * 40) / 100;
+        document.getElementById("label-b-science").innerHTML =
+          (b_science * 40) / 100;
+        document.getElementById("label-b-ss").innerHTML = (b_ss * 40) / 100;
+        document.getElementById("label-b-sanskrit").innerHTML =
+          (b_sanskrit * 40) / 100;
+        document.getElementById("label-b-gujarati").innerHTML =
+          (b_gujarati * 40) / 100;
+        document.getElementById("label-b-pt").innerHTML = (b_pt * 40) / 100;
+
+        //   -------------------------- Section C calculations --------------------------------
+
+        document.getElementById("label-c-maths").innerHTML =
+          (c_maths * 37.5) / 100;
+        document.getElementById("label-c-english").innerHTML =
+          (c_english * 37.5) / 100;
+        document.getElementById("label-c-science").innerHTML =
+          (c_science * 37.5) / 100;
+        document.getElementById("label-c-ss").innerHTML = (c_ss * 37.5) / 100;
+        document.getElementById("label-c-sanskrit").innerHTML =
+          (c_sanskrit * 37.5) / 100;
+        document.getElementById("label-c-gujarati").innerHTML =
+          (c_gujarati * 37.5) / 100;
+        document.getElementById("label-c-pt").innerHTML = (c_pt * 37.5) / 100;
+
+        //   -------------------------- Section D calculations --------------------------------
+
+        document.getElementById("label-d-maths").innerHTML =
+          (d1_maths * 40) / 100;
+        document.getElementById("label-d-english").innerHTML =
+          (d1_english * 40) / 100;
+        document.getElementById("label-d-science").innerHTML =
+          (d1_science * 40) / 100;
+        document.getElementById("label-d-ss").innerHTML = (d1_ss * 40) / 100;
+        document.getElementById("label-d-sanskrit").innerHTML =
+          (d1_sanskrit * 40) / 100;
+        document.getElementById("label-d-gujarati").innerHTML =
+          (d1_gujarati * 40) / 100;
+        document.getElementById("label-d-pt").innerHTML = (d1_pt * 40) / 100;
+
+        //   -------------------------- Total --------------------------------
+
+        total_a_maths = document.getElementById("label-a-maths").innerHTML;
+        total_b_maths = document.getElementById("label-b-maths").innerHTML;
+        total_c_maths = document.getElementById("label-c-maths").innerHTML;
+        total_d_maths = document.getElementById("label-d-maths").innerHTML;
+
+        total_a_english = document.getElementById("label-a-english").innerHTML;
+        total_b_english = document.getElementById("label-b-english").innerHTML;
+        total_c_english = document.getElementById("label-c-english").innerHTML;
+        total_d_english = document.getElementById("label-d-english").innerHTML;
+
+        total_a_science = document.getElementById("label-a-science").innerHTML;
+        total_b_science = document.getElementById("label-b-science").innerHTML;
+        total_c_science = document.getElementById("label-c-science").innerHTML;
+        total_d_science = document.getElementById("label-d-science").innerHTML;
+
+        total_a_ss = document.getElementById("label-a-ss").innerHTML;
+        total_b_ss = document.getElementById("label-b-ss").innerHTML;
+        total_c_ss = document.getElementById("label-c-ss").innerHTML;
+        total_d_ss = document.getElementById("label-d-ss").innerHTML;
+
+        total_a_sanskrit =
+          document.getElementById("label-a-sanskrit").innerHTML;
+        total_b_sanskrit =
+          document.getElementById("label-b-sanskrit").innerHTML;
+        total_c_sanskrit =
+          document.getElementById("label-c-sanskrit").innerHTML;
+        total_d_sanskrit =
+          document.getElementById("label-d-sanskrit").innerHTML;
+
+        total_a_gujarati =
+          document.getElementById("label-a-gujarati").innerHTML;
+        total_b_gujarati =
+          document.getElementById("label-b-gujarati").innerHTML;
+        total_c_gujarati =
+          document.getElementById("label-c-gujarati").innerHTML;
+        total_d_gujarati =
+          document.getElementById("label-d-gujarati").innerHTML;
+
+        total_a_pt = document.getElementById("label-a-pt").innerHTML;
+        total_b_pt = document.getElementById("label-b-pt").innerHTML;
+        total_c_pt = document.getElementById("label-c-pt").innerHTML;
+        total_d_pt = document.getElementById("label-d-pt").innerHTML;
+
+        final_maths = document.getElementById("total-maths").innerHTML = (
+          parseFloat(total_a_maths) +
+          parseFloat(total_b_maths) +
+          parseFloat(total_c_maths) +
+          parseFloat(total_d_maths)
+        ).toFixed(2);
+
+        final_english = document.getElementById("total-english").innerHTML = (
+          parseFloat(total_a_english) +
+          parseFloat(total_b_english) +
+          parseFloat(total_c_english) +
+          parseFloat(total_d_english)
+        ).toFixed(2);
+        final_science = document.getElementById("total-science").innerHTML = (
+          parseFloat(total_a_science) +
+          parseFloat(total_b_science) +
+          parseFloat(total_c_science) +
+          parseFloat(total_d_science)
+        ).toFixed(2);
+        final_ss = document.getElementById("total-ss").innerHTML = (
+          parseFloat(total_a_ss) +
+          parseFloat(total_b_ss) +
+          parseFloat(total_c_ss) +
+          parseFloat(total_d_ss)
+        ).toFixed(2);
+        final_sanskrit = document.getElementById("total-sanskrit").innerHTML = (
+          parseFloat(total_a_sanskrit) +
+          parseFloat(total_b_sanskrit) +
+          parseFloat(total_c_sanskrit) +
+          parseFloat(total_d_sanskrit)
+        ).toFixed(2);
+        final_gujarati = document.getElementById("total-gujarati").innerHTML = (
+          parseFloat(total_a_gujarati) +
+          parseFloat(total_b_gujarati) +
+          parseFloat(total_c_gujarati) +
+          parseFloat(total_d_gujarati)
+        ).toFixed(2);
+        final_pt = document.getElementById("total-pt").innerHTML = (
+          parseFloat(total_a_pt) +
+          parseFloat(total_b_pt) +
+          parseFloat(total_c_pt) +
+          parseFloat(total_d_pt)
+        ).toFixed(2);
+
+        //   -------------------------- Final Total --------------------------------
+        final = document.getElementById("final").innerHTML = (
+          parseFloat(final_maths) +
+          parseFloat(final_english) +
+          parseFloat(final_science) +
+          parseFloat(final_ss) +
+          parseFloat(final_sanskrit) +
+          parseFloat(final_gujarati) +
+          parseFloat(final_pt)
+        ).toFixed(2);
+
+        //   -------------------------- Percentage --------------------------------
+        document.getElementById("percentage").innerHTML = (
+          (parseFloat(final) * 100) /
+          560
+        ).toFixed(2);
+      });
+    </script>
+  </body>
+</html>

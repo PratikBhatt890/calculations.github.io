@@ -47,7 +47,7 @@
               <th>SS</th>
               <th>Sanskrit</th>
               <th>Gujarati</th>
-              <!-- <th>PT</th> -->
+              <th>PT</th>
             </tr>
           </thead>
           <tbody>
@@ -91,9 +91,9 @@
                   name="a-gujarati"
                 />
               </td>
-              <!-- <td>
+              <td>
                 <input type="number" class="task" id="a-pt" name="a-pt" />
-              </td> -->
+              </td>
             </tr>
             <tr>
               <td>Section A-40%</td>
@@ -103,7 +103,7 @@
               <td><label id="label-a-ss">0</label></td>
               <td><label id="label-a-sanskrit">0</label></td>
               <td><label id="label-a-gujarati">0</label></td>
-              <!-- <td><label id="label-a-pt">0</label></td> -->
+              <td><label id="label-a-pt">0</label></td>
             </tr>
             <tr>
               <td>Section B(50)</td>
@@ -145,9 +145,9 @@
                   name="b-gujarati"
                 />
               </td>
-              <!-- <td>
+              <td>
                 <input type="number" class="task" id="b-pt" name="b-pt" />
-              </td> -->
+              </td>
             </tr>
             <tr>
               <td>Section B-40%</td>
@@ -157,7 +157,7 @@
               <td><label id="label-b-ss">0</label></td>
               <td><label id="label-b-sanskrit">0</label></td>
               <td><label id="label-b-gujarati">0</label></td>
-              <!-- <td><label id="label-b-pt">0</label></td> -->
+              <td><label id="label-b-pt">0</label></td>
             </tr>
             <tr>
               <td>Section C(80)</td>
@@ -199,9 +199,9 @@
                   name="c-gujarati"
                 />
               </td>
-              <!-- <td>
+              <td>
                 <input type="number" class="task" id="c-pt" name="c-pt" />
-              </td> -->
+              </td>
             </tr>
             <tr>
               <td>Section C-37.5%</td>
@@ -211,7 +211,7 @@
               <td><label id="label-c-ss">0</label></td>
               <td><label id="label-c-sanskrit">0</label></td>
               <td><label id="label-c-gujarati">0</label></td>
-              <!-- <td><label id="label-c-pt">0</label></td> -->
+              <td><label id="label-c-pt">0</label></td>
             </tr>
             <tr>
               <td>Section D</td>
@@ -243,9 +243,9 @@
                   name="d-6"
                 />
               </td>
-              <!-- <td>
+              <td>
                 <input type="number" class="task" id="d-1-pt" name="d-7" />
-              </td> -->
+              </td>
             </tr>
 
             <tr>
@@ -257,7 +257,7 @@
               <td><label id="label-d-ss">0</label></td>
               <td><label id="label-d-sanskrit">0</label></td>
               <td><label id="label-d-gujarati">0</label></td>
-              <!-- <td><label id="label-d-pt">0</label></td> -->
+              <td><label id="label-d-pt">0</label></td>
             </tr>
             <tr>
               <td>Total</td>
@@ -268,17 +268,17 @@
               <td><label id="total-ss">0</label></td>
               <td><label id="total-sanskrit">0</label></td>
               <td><label id="total-gujarati">0</label></td>
-              <!-- <td><label id="total-pt">0</label></td> -->
+              <td><label id="total-pt">0</label></td>
             </tr>
             <tr>
               <td>Final Total</td>
-              <td colspan="6" style="text-align: center">
+              <td colspan="7" style="text-align: center">
                 <label id="final">0</label>
               </td>
             </tr>
             <tr>
               <td>Percentage</td>
-              <td colspan="6" style="text-align: center">
+              <td colspan="7" style="text-align: center">
                 <label id="percentage">0</label>
               </td>
             </tr>
@@ -323,7 +323,7 @@
         var a_ss = document.getElementById("a-ss").value;
         var a_sanskrit = document.getElementById("a-sanskrit").value;
         var a_gujarati = document.getElementById("a-gujarati").value;
-        // var a_pt = document.getElementById("a-pt").value;
+        var a_pt = document.getElementById("a-pt").value;
 
         var b_maths = document.getElementById("b-maths").value;
         var b_english = document.getElementById("b-english").value;
@@ -331,7 +331,7 @@
         var b_ss = document.getElementById("b-ss").value;
         var b_sanskrit = document.getElementById("b-sanskrit").value;
         var b_gujarati = document.getElementById("b-gujarati").value;
-        // var b_pt = document.getElementById("b-pt").value;
+        var b_pt = document.getElementById("b-pt").value;
 
         var c_maths = document.getElementById("c-maths").value;
         var c_english = document.getElementById("c-english").value;
@@ -339,7 +339,7 @@
         var c_ss = document.getElementById("c-ss").value;
         var c_sanskrit = document.getElementById("c-sanskrit").value;
         var c_gujarati = document.getElementById("c-gujarati").value;
-        // var c_pt = document.getElementById("c-pt").value;
+        var c_pt = document.getElementById("c-pt").value;
 
         var d1_maths = document.getElementById("d-1-maths").value;
         var d1_english = document.getElementById("d-1-english").value;
@@ -347,7 +347,7 @@
         var d1_ss = document.getElementById("d-1-ss").value;
         var d1_sanskrit = document.getElementById("d-1-sanskrit").value;
         var d1_gujarati = document.getElementById("d-1-gujarati").value;
-        // var d1_pt = document.getElementById("d-1-pt").value;
+        var d1_pt = document.getElementById("d-1-pt").value;
 
         // var d2_maths = document.getElementById("d-2-maths").value;
         // var d2_english = document.getElementById("d-2-english").value;
@@ -378,7 +378,7 @@
           (a_sanskrit * 40) / 100;
         document.getElementById("label-a-gujarati").innerHTML =
           (a_gujarati * 40) / 100;
-        // document.getElementById("label-a-pt").innerHTML = (a_pt * 40) / 100;
+        document.getElementById("label-a-pt").innerHTML = (a_pt * 40) / 100;
 
         //   -------------------------- Section B calculations --------------------------------
 
@@ -393,7 +393,7 @@
           (b_sanskrit * 40) / 100;
         document.getElementById("label-b-gujarati").innerHTML =
           (b_gujarati * 40) / 100;
-        // document.getElementById("label-b-pt").innerHTML = (b_pt * 40) / 100;
+        document.getElementById("label-b-pt").innerHTML = (b_pt * 40) / 100;
 
         //   -------------------------- Section C calculations --------------------------------
 
@@ -408,7 +408,7 @@
           (c_sanskrit * 37.5) / 100;
         document.getElementById("label-c-gujarati").innerHTML =
           (c_gujarati * 37.5) / 100;
-        // document.getElementById("label-c-pt").innerHTML = (c_pt * 37.5) / 100;
+        document.getElementById("label-c-pt").innerHTML = (c_pt * 37.5) / 100;
 
         //   -------------------------- Section D calculations --------------------------------
 
@@ -423,7 +423,7 @@
           (d1_sanskrit * 40) / 100;
         document.getElementById("label-d-gujarati").innerHTML =
           (d1_gujarati * 40) / 100;
-        // document.getElementById("label-d-pt").innerHTML = (d1_pt * 40) / 100;
+        document.getElementById("label-d-pt").innerHTML = (d1_pt * 40) / 100;
 
         //   -------------------------- Total --------------------------------
 
@@ -465,10 +465,10 @@
         total_d_gujarati =
           document.getElementById("label-d-gujarati").innerHTML;
 
-        // total_a_pt = document.getElementById("label-a-pt").innerHTML;
-        // total_b_pt = document.getElementById("label-b-pt").innerHTML;
-        // total_c_pt = document.getElementById("label-c-pt").innerHTML;
-        // total_d_pt = document.getElementById("label-d-pt").innerHTML;
+        total_a_pt = document.getElementById("label-a-pt").innerHTML;
+        total_b_pt = document.getElementById("label-b-pt").innerHTML;
+        total_c_pt = document.getElementById("label-c-pt").innerHTML;
+        total_d_pt = document.getElementById("label-d-pt").innerHTML;
 
         final_maths = document.getElementById("total-maths").innerHTML = (
           parseFloat(total_a_maths) +
@@ -507,12 +507,12 @@
           parseFloat(total_c_gujarati) +
           parseFloat(total_d_gujarati)
         ).toFixed(2);
-        // final_pt = document.getElementById("total-pt").innerHTML = (
-        // parseFloat(total_a_pt) +
-        // parseFloat(total_b_pt) +
-        // parseFloat(total_c_pt) +
-        // parseFloat(total_d_pt)
-        // ).toFixed(2);
+        final_pt = document.getElementById("total-pt").innerHTML = (
+          parseFloat(total_a_pt) +
+          parseFloat(total_b_pt) +
+          parseFloat(total_c_pt) +
+          parseFloat(total_d_pt)
+        ).toFixed(2);
 
         //   -------------------------- Final Total --------------------------------
         final = document.getElementById("final").innerHTML = (
@@ -521,15 +521,14 @@
           parseFloat(final_science) +
           parseFloat(final_ss) +
           parseFloat(final_sanskrit) +
-          parseFloat(final_gujarati)
-        )
-          // parseFloat(final_pt)
-          .toFixed(2);
+          parseFloat(final_gujarati) +
+          parseFloat(final_pt)
+        ).toFixed(2);
 
         //   -------------------------- Percentage --------------------------------
         document.getElementById("percentage").innerHTML = (
           (parseFloat(final) * 100) /
-          480
+          560
         ).toFixed(2);
       });
     </script>
