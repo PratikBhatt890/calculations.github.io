@@ -184,7 +184,7 @@
             <td><label id="label-c-pt">0</label></td>
           </tr>
           <tr>
-            <td>Section D MAX1(25)</td>
+            <td>Section D</td>
             <td>
               <input type="number" class="task" id="d-1-maths" name="d-1" />
             </td>
@@ -207,32 +207,9 @@
               <input type="number" class="task" id="d-1-pt" name="d-7" />
             </td>
           </tr>
+
           <tr>
-            <td>Section D MAX2(25)</td>
-            <td>
-              <input type="number" class="task" id="d-2-maths" name="d-1" />
-            </td>
-            <td>
-              <input type="number" class="task" id="d-2-english" name="d-2" />
-            </td>
-            <td>
-              <input type="number" class="task" id="d-2-science" name="d-3" />
-            </td>
-            <td>
-              <input type="number" class="task" id="d-2-ss" name="d-4" />
-            </td>
-            <td>
-              <input type="number" class="task" id="d-2-sanskrit" name="d-5" />
-            </td>
-            <td>
-              <input type="number" class="task" id="d-2-gujarati" name="d-6" />
-            </td>
-            <td>
-              <input type="number" class="task" id="d-2-pt" name="d-7" />
-            </td>
-          </tr>
-          <tr>
-            <td>Section D-Average MAX1 & MAX2 40%</td>
+            <td>Section D-40%</td>
 
             <td><label id="label-d-maths">0</label></td>
             <td><label id="label-d-english">0</label></td>
@@ -323,21 +300,21 @@
         var d1_gujarati = document.getElementById("d-1-gujarati").value;
         var d1_pt = document.getElementById("d-1-pt").value;
 
-        var d2_maths = document.getElementById("d-2-maths").value;
-        var d2_english = document.getElementById("d-2-english").value;
-        var d2_science = document.getElementById("d-2-science").value;
-        var d2_ss = document.getElementById("d-2-ss").value;
-        var d2_sanskrit = document.getElementById("d-2-sanskrit").value;
-        var d2_gujarati = document.getElementById("d-2-gujarati").value;
-        var d2_pt = document.getElementById("d-2-pt").value;
+        // var d2_maths = document.getElementById("d-2-maths").value;
+        // var d2_english = document.getElementById("d-2-english").value;
+        // var d2_science = document.getElementById("d-2-science").value;
+        // var d2_ss = document.getElementById("d-2-ss").value;
+        // var d2_sanskrit = document.getElementById("d-2-sanskrit").value;
+        // var d2_gujarati = document.getElementById("d-2-gujarati").value;
+        // var d2_pt = document.getElementById("d-2-pt").value;
 
-        var d_maths = [d1_maths, d2_maths];
-        var d_english = [d1_english, d2_english];
-        var d_science = [d1_science, d2_science];
-        var d_ss = [d1_ss, d2_ss];
-        var d_sanskrit = [d1_sanskrit, d2_sanskrit];
-        var d_gujarati = [d1_gujarati, d2_gujarati];
-        var d_pt = [d1_pt, d2_pt];
+        // var d_maths = [d1_maths, d2_maths];
+        // var d_english = [d1_english, d2_english];
+        // var d_science = [d1_science, d2_science];
+        // var d_ss = [d1_ss, d2_ss];
+        // var d_sanskrit = [d1_sanskrit, d2_sanskrit];
+        // var d_gujarati = [d1_gujarati, d2_gujarati];
+        // var d_pt = [d1_pt, d2_pt];
 
         //   -------------------------- Section A calculations --------------------------------
 
@@ -385,54 +362,19 @@
         document.getElementById("label-c-pt").innerHTML = (c_pt * 37.5) / 100;
 
         //   -------------------------- Section D calculations --------------------------------
-        maths = 0;
-        for (let i = 0; i < 2; i++) {
-          maths += parseFloat(d_maths[i]);
-        }
-        maths_avg = maths / 2;
-        english = 0;
-        for (let i = 0; i < 2; i++) {
-          english += parseFloat(d_english[i]);
-        }
-        english_avg = english / 2;
-        science = 0;
-        for (let i = 0; i < 2; i++) {
-          science += parseFloat(d_science[i]);
-        }
-        science_avg = science / 2;
-        ss = 0;
-        for (let i = 0; i < 2; i++) {
-          ss += parseFloat(d_ss[i]);
-        }
-        ss_avg = ss / 2;
-        sanskrit = 0;
-        for (let i = 0; i < 2; i++) {
-          sanskrit += parseFloat(d_sanskrit[i]);
-        }
-        sanskrit_avg = sanskrit / 2;
-        gujarati = 0;
-        for (let i = 0; i < 2; i++) {
-          gujarati += parseFloat(d_gujarati[i]);
-        }
-        gujarati_avg = gujarati / 2;
-        pt = 0;
-        for (let i = 0; i < 2; i++) {
-          pt += parseFloat(d_pt[i]);
-        }
-        pt_avg = pt / 2;
 
         document.getElementById("label-d-maths").innerHTML =
-          (maths_avg * 40) / 100;
+          (d1_maths * 40) / 100;
         document.getElementById("label-d-english").innerHTML =
-          (english_avg * 40) / 100;
+          (d1_english * 40) / 100;
         document.getElementById("label-d-science").innerHTML =
-          (science_avg * 40) / 100;
-        document.getElementById("label-d-ss").innerHTML = (ss_avg * 40) / 100;
+          (d1_science * 40) / 100;
+        document.getElementById("label-d-ss").innerHTML = (d1_ss * 40) / 100;
         document.getElementById("label-d-sanskrit").innerHTML =
-          (sanskrit_avg * 40) / 100;
+          (d1_sanskrit * 40) / 100;
         document.getElementById("label-d-gujarati").innerHTML =
-          (gujarati_avg * 40) / 100;
-        document.getElementById("label-d-pt").innerHTML = (pt_avg * 40) / 100;
+          (d1_gujarati * 40) / 100;
+        document.getElementById("label-d-pt").innerHTML = (d1_pt * 40) / 100;
 
         //   -------------------------- Total --------------------------------
 
