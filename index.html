@@ -16,234 +16,283 @@
       rel="stylesheet"
       href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css"
     />
+    <style>
+      .task{
+        width:50px
+      }
+    </style>
   </head>
   <body>
-    <section class="m-2 border border-dark">
-      <table id="table_id" class="display">
-        <thead>
-          <tr>
-            <th>Subjects</th>
-            <th>Maths</th>
-            <th>English</th>
-            <th>Science</th>
-            <th>SS</th>
-            <th>Sanskrit</th>
-            <th>Gujarati</th>
-            <th>PT</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Section A(50)</td>
-            <td>
-              <input type="number" class="task" id="a-maths" name="a-maths" />
-            </td>
-            <td>
-              <input
-                type="number"
-                class="task"
-                id="a-english"
-                name="a-english"
-              />
-            </td>
-            <td>
-              <input
-                type="number"
-                class="task"
-                id="a-science"
-                name="a-science"
-              />
-            </td>
-            <td><input type="number" class="task" id="a-ss" name="a-ss" /></td>
-            <td>
-              <input
-                type="number"
-                class="task"
-                id="a-sanskrit"
-                name="a-sanskrit"
-              />
-            </td>
-            <td>
-              <input
-                type="number"
-                class="task"
-                id="a-gujarati"
-                name="a-gujarati"
-              />
-            </td>
-            <td><input type="number" class="task" id="a-pt" name="a-pt" /></td>
-          </tr>
-          <tr>
-            <td>Section A-40%</td>
-            <td><label id="label-a-maths">0</label></td>
-            <td><label id="label-a-english">0</label></td>
-            <td><label id="label-a-science">0</label></td>
-            <td><label id="label-a-ss">0</label></td>
-            <td><label id="label-a-sanskrit">0</label></td>
-            <td><label id="label-a-gujarati">0</label></td>
-            <td><label id="label-a-pt">0</label></td>
-          </tr>
-          <tr>
-            <td>Section B(50)</td>
-            <td>
-              <input type="number" class="task" id="b-maths" name="b-maths" />
-            </td>
-            <td>
-              <input
-                type="number"
-                class="task"
-                id="b-english"
-                name="b-english"
-              />
-            </td>
-            <td>
-              <input
-                type="number"
-                class="task"
-                id="b-science"
-                name="b-science"
-              />
-            </td>
-            <td><input type="number" class="task" id="b-ss" name="b-ss" /></td>
-            <td>
-              <input
-                type="number"
-                class="task"
-                id="b-sanskrit"
-                name="b-sanskrit"
-              />
-            </td>
-            <td>
-              <input
-                type="number"
-                class="task"
-                id="b-gujarati"
-                name="b-gujarati"
-              />
-            </td>
-            <td><input type="number" class="task" id="b-pt" name="b-pt" /></td>
-          </tr>
-          <tr>
-            <td>Section B-40%</td>
-            <td><label id="label-b-maths">0</label></td>
-            <td><label id="label-b-english">0</label></td>
-            <td><label id="label-b-science">0</label></td>
-            <td><label id="label-b-ss">0</label></td>
-            <td><label id="label-b-sanskrit">0</label></td>
-            <td><label id="label-b-gujarati">0</label></td>
-            <td><label id="label-b-pt">0</label></td>
-          </tr>
-          <tr>
-            <td>Section C(80)</td>
-            <td>
-              <input type="number" class="task" id="c-maths" name="c-maths" />
-            </td>
-            <td>
-              <input
-                type="number"
-                class="task"
-                id="c-english"
-                name="c-english"
-              />
-            </td>
-            <td>
-              <input
-                type="number"
-                class="task"
-                id="c-science"
-                name="c-science"
-              />
-            </td>
-            <td><input type="number" class="task" id="c-ss" name="c-ss" /></td>
-            <td>
-              <input
-                type="number"
-                class="task"
-                id="c-sanskrit"
-                name="c-sanskrit"
-              />
-            </td>
-            <td>
-              <input
-                type="number"
-                class="task"
-                id="c-gujarati"
-                name="c-gujarati"
-              />
-            </td>
-            <td><input type="number" class="task" id="c-pt" name="c-pt" /></td>
-          </tr>
-          <tr>
-            <td>Section C-37.5%</td>
-            <td><label id="label-c-maths">0</label></td>
-            <td><label id="label-c-english">0</label></td>
-            <td><label id="label-c-science">0</label></td>
-            <td><label id="label-c-ss">0</label></td>
-            <td><label id="label-c-sanskrit">0</label></td>
-            <td><label id="label-c-gujarati">0</label></td>
-            <td><label id="label-c-pt">0</label></td>
-          </tr>
-          <tr>
-            <td>Section D</td>
-            <td>
-              <input type="number" class="task" id="d-1-maths" name="d-1" />
-            </td>
-            <td>
-              <input type="number" class="task" id="d-1-english" name="d-2" />
-            </td>
-            <td>
-              <input type="number" class="task" id="d-1-science" name="d-3" />
-            </td>
-            <td>
-              <input type="number" class="task" id="d-1-ss" name="d-4" />
-            </td>
-            <td>
-              <input type="number" class="task" id="d-1-sanskrit" name="d-5" />
-            </td>
-            <td>
-              <input type="number" class="task" id="d-1-gujarati" name="d-6" />
-            </td>
-            <td>
-              <input type="number" class="task" id="d-1-pt" name="d-7" />
-            </td>
-          </tr>
+    <section class="container border border-dark">
+      <form action="">
+        <input
+          class="form-control form-control-lg"
+          type="text"
+          placeholder="Name"
+          aria-label=".form-control-lg example"
+        />
+        <input
+          class="form-control form-control-lg"
+          type="number"
+          placeholder="Roll No"
+          aria-label=".form-control-lg example"
+        />
+        <table id="table_id" class="display table-responsive">
+          <thead>
+            <tr>
+              <th>Subjects</th>
+              <th>Maths</th>
+              <th>English</th>
+              <th>Science</th>
+              <th>SS</th>
+              <th>Sanskrit</th>
+              <th>Gujarati</th>
+              <th>PT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Section A(50)</td>
+              <td>
+                <input type="number" class="task" id="a-maths" name="a-maths" />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="a-english"
+                  name="a-english"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="a-science"
+                  name="a-science"
+                />
+              </td>
+              <td>
+                <input type="number" class="task" id="a-ss" name="a-ss" />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="a-sanskrit"
+                  name="a-sanskrit"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="a-gujarati"
+                  name="a-gujarati"
+                />
+              </td>
+              <td>
+                <input type="number" class="task" id="a-pt" name="a-pt" />
+              </td>
+            </tr>
+            <tr>
+              <td>Section A-40%</td>
+              <td><label id="label-a-maths">0</label></td>
+              <td><label id="label-a-english">0</label></td>
+              <td><label id="label-a-science">0</label></td>
+              <td><label id="label-a-ss">0</label></td>
+              <td><label id="label-a-sanskrit">0</label></td>
+              <td><label id="label-a-gujarati">0</label></td>
+              <td><label id="label-a-pt">0</label></td>
+            </tr>
+            <tr>
+              <td>Section B(50)</td>
+              <td>
+                <input type="number" class="task" id="b-maths" name="b-maths" />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="b-english"
+                  name="b-english"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="b-science"
+                  name="b-science"
+                />
+              </td>
+              <td>
+                <input type="number" class="task" id="b-ss" name="b-ss" />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="b-sanskrit"
+                  name="b-sanskrit"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="b-gujarati"
+                  name="b-gujarati"
+                />
+              </td>
+              <td>
+                <input type="number" class="task" id="b-pt" name="b-pt" />
+              </td>
+            </tr>
+            <tr>
+              <td>Section B-40%</td>
+              <td><label id="label-b-maths">0</label></td>
+              <td><label id="label-b-english">0</label></td>
+              <td><label id="label-b-science">0</label></td>
+              <td><label id="label-b-ss">0</label></td>
+              <td><label id="label-b-sanskrit">0</label></td>
+              <td><label id="label-b-gujarati">0</label></td>
+              <td><label id="label-b-pt">0</label></td>
+            </tr>
+            <tr>
+              <td>Section C(80)</td>
+              <td>
+                <input type="number" class="task" id="c-maths" name="c-maths" />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="c-english"
+                  name="c-english"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="c-science"
+                  name="c-science"
+                />
+              </td>
+              <td>
+                <input type="number" class="task" id="c-ss" name="c-ss" />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="c-sanskrit"
+                  name="c-sanskrit"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="c-gujarati"
+                  name="c-gujarati"
+                />
+              </td>
+              <td>
+                <input type="number" class="task" id="c-pt" name="c-pt" />
+              </td>
+            </tr>
+            <tr>
+              <td>Section C-37.5%</td>
+              <td><label id="label-c-maths">0</label></td>
+              <td><label id="label-c-english">0</label></td>
+              <td><label id="label-c-science">0</label></td>
+              <td><label id="label-c-ss">0</label></td>
+              <td><label id="label-c-sanskrit">0</label></td>
+              <td><label id="label-c-gujarati">0</label></td>
+              <td><label id="label-c-pt">0</label></td>
+            </tr>
+            <tr>
+              <td>Section D</td>
+              <td>
+                <input type="number" class="task" id="d-1-maths" name="d-1" />
+              </td>
+              <td>
+                <input type="number" class="task" id="d-1-english" name="d-2" />
+              </td>
+              <td>
+                <input type="number" class="task" id="d-1-science" name="d-3" />
+              </td>
+              <td>
+                <input type="number" class="task" id="d-1-ss" name="d-4" />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="d-1-sanskrit"
+                  name="d-5"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="task"
+                  id="d-1-gujarati"
+                  name="d-6"
+                />
+              </td>
+              <td>
+                <input type="number" class="task" id="d-1-pt" name="d-7" />
+              </td>
+            </tr>
 
-          <tr>
-            <td>Section D-40%</td>
+            <tr>
+              <td>Section D-40%</td>
 
-            <td><label id="label-d-maths">0</label></td>
-            <td><label id="label-d-english">0</label></td>
-            <td><label id="label-d-science">0</label></td>
-            <td><label id="label-d-ss">0</label></td>
-            <td><label id="label-d-sanskrit">0</label></td>
-            <td><label id="label-d-gujarati">0</label></td>
-            <td><label id="label-d-pt">0</label></td>
-          </tr>
-          <tr>
-            <td>Total</td>
+              <td><label id="label-d-maths">0</label></td>
+              <td><label id="label-d-english">0</label></td>
+              <td><label id="label-d-science">0</label></td>
+              <td><label id="label-d-ss">0</label></td>
+              <td><label id="label-d-sanskrit">0</label></td>
+              <td><label id="label-d-gujarati">0</label></td>
+              <td><label id="label-d-pt">0</label></td>
+            </tr>
+            <tr>
+              <td>Total</td>
 
-            <td><label id="total-maths">0</label></td>
-            <td><label id="total-english">0</label></td>
-            <td><label id="total-science">0</label></td>
-            <td><label id="total-ss">0</label></td>
-            <td><label id="total-sanskrit">0</label></td>
-            <td><label id="total-gujarati">0</label></td>
-            <td><label id="total-pt">0</label></td>
-          </tr>
-          <tr>
-            <td>Final Total</td>
-            <td colspan="7" style="text-align: center">
-              <label id="final">0</label>
-            </td>
-          </tr>
-          <tr>
-            <td>Percentage</td>
-            <td colspan="7" style="text-align: center">
-              <label id="percentage">0</label>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+              <td><label id="total-maths">0</label></td>
+              <td><label id="total-english">0</label></td>
+              <td><label id="total-science">0</label></td>
+              <td><label id="total-ss">0</label></td>
+              <td><label id="total-sanskrit">0</label></td>
+              <td><label id="total-gujarati">0</label></td>
+              <td><label id="total-pt">0</label></td>
+            </tr>
+            <tr>
+              <td>Final Total</td>
+              <td colspan="7" style="text-align: center">
+                <label id="final">0</label>
+              </td>
+            </tr>
+            <tr>
+              <td>Percentage</td>
+              <td colspan="7" style="text-align: center">
+                <label id="percentage">0</label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      <input
+        type="button"
+        name="print"
+        value="Print"
+        onClick="window.print();"
+        class="container btn btn-primary"
+        type="submit"
+      />
     </section>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
